@@ -15,10 +15,7 @@
         status = "okay";
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT) &mouse_runtime_input_processor &scroll_runtime_input_processor>;
 		scroller {
-            layers = <5>;
-            input-processors =
-                <&zip_xy_to_scroll_mapper>,
-                <&zip_scroll_scaler 2 5>;
+            layers = <2>;
         };
      };
 		
